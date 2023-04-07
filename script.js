@@ -21,3 +21,20 @@ form.addEventListener("submit", function(event) {
         form.reset();
     }
 });
+
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+	const formData = new FormData(form);
+	const xhr = new XMLHttpRequest();
+	xhr.open('POST', 'sendContactForm.php');
+	xhr.onload = () => {
+		if (xhr.status === 200) {
+			alert('Thanks for contacting us! We will get back to you soon.');
+			form.reset();
+		} else {
+			alert('Oops! Something went wrong. Please try again later.');
+		}
+	};
+	xhr.send(formData);
+});
