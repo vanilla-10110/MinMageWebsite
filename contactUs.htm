@@ -1,0 +1,36 @@
+<!DOCTYPE htm>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - MinMage Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MinMage Games</h1>
+        <nav>
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="aboutUs.htm">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <p>If you have any questions, comments, or concerns, please don't hesitate to contact us using the form below. We'll get back to you as soon as possible!</p>
+        <form action="submit-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 MinMage Games</p>
+    </footer>
+</body>
+</html>
