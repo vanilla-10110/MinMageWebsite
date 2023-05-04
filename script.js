@@ -38,3 +38,8 @@ form.addEventListener('submit', (event) => {
 	};
 	xhr.send(formData);
 });
+
+
+function invest() {
+    alert("Thank you for investing all of your money into Swords and Spells!")
+}
