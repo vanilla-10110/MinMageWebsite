@@ -1,0 +1,40 @@
+@charset "utf-8";
+body {
+    background-color: #221f38;
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+
+.topNav {
+    overflow: hidden;
+    background-color: #474173;
+  }
+  
+.topNav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.topNav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.topNav a.burgerBox {
+    float: right;
+    background-color: #474173;
+    color: white;
+  }
+
+.burger{
+    width: 40px;
+    height: 7px;
+    background-color: #221f38;
+    margin: 14px 0px;
+    border-radius: 10px;
+}
