@@ -1,48 +1,52 @@
 @charset "utf-8";
 body {
-    background-color: #221f38;
-    margin:0;
-    font-family: 'Courier New', Courier, monospace;
-  }
+  background-color: #221f38;
+  margin:0;
+  font-family: 'Courier New', Courier, monospace;
+}
 
 
 .topNav {
-    overflow: hidden;
-    background-color: #474173;
-  }
+  overflow: hidden;
+  background-color: #474173;
+}
   
 .topNav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-.title{
-  left: 50%;
+  float: left;
+  color: #f2f2f2;
   text-align: center;
-  text-transform: uppercase;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+  
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  text-align: center;
+  color: #d8cfe6;
+  font-size: 75px;
+  cursor: pointer;
 }
 
-.topNav a.title:hover {
-    background-color: #ddd;
-    color: black;
-  }
+
+
   
 .topNav a.burgerBox {
   bottom: 0px;
-    float: right;
-    background-color: #474173;
-    color: white;
-  }
+  float: right;
+  background-color: #474173;
+  color: white;
+  cursor: pointer;
+}
 
-.burger1, .burger2, .burger3{
-    width: 40px;
-    height: 7px;
-    background-color: #221f38;
-    margin: 14px 0px;
-    border-radius: 10px;
-    transition: 0.4s;
+.burger1, .burger2, .burger3 {
+  width: 40px;
+  height: 7px;
+  background-color: #221f38;
+  margin: 14px 0px;
+  border-radius: 10px;
+  transition: 0.4s;
 }
