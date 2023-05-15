@@ -4,6 +4,25 @@ body {
   margin:0;
   font-family: 'Courier New', Courier, monospace;
   color: #f2f2f2;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  -webkit-overflow-scrolling: touch;
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #474173;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D4AF37;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #C5A032;
 }
 
 .titles {
@@ -11,6 +30,15 @@ body {
   color: #D4AF37;
   font-size: 34px;
   font-weight: normal;
+}
+
+hr {
+  height: 1.2px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #474173;
+  border-color: #474173;
 }
 
 main{
@@ -23,17 +51,17 @@ main{
 
 .topNav {
   overflow: hidden;
-  background-color: #474173;
+  background-color: #221f38;
   height: 150px;
 
 
 
-  -webkit-mask-image: -webkit-gradient(linear, center top, center bottom, 
+ /* -webkit-mask-image: -webkit-gradient(linear, center top, center bottom, 
 			color-stop(0.30,  rgba(0,0,0,1)),
 			color-stop(1.00,  rgba(0,0,0,0)));
   mask-image: -webkit-gradient(linear, center top, center bottom, 
 			color-stop(0.50,  rgba(0,0,0,1)),
-			color-stop(1.00,  rgba(0,0,0,0)));
+			color-stop(1.00,  rgba(0,0,0,0)));*/
 }
   
 .topNav a {
@@ -63,7 +91,7 @@ main{
   position: absolute;
   top: 13px;
   right: 10px;
-  background-color: #474173;
+  background-color: #221f38;
   color: white;
   cursor: pointer;
 }
@@ -71,7 +99,7 @@ main{
 .burger1, .burger2, .burger3 {
   width: 50px;
   height: 7px;
-  background-color: #221f38;
+  background-color: #474173;
   margin: 14px 15px;
   border-radius: 10px;
   transition: 0.4s;
@@ -81,7 +109,7 @@ main{
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
-  -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+  -ms-overflow-style: none;
   
   margin: 0 auto 0 auto;
   width: 800px;
@@ -120,3 +148,61 @@ main{
   border-radius: 7px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #474173;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: none;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
