@@ -183,9 +183,10 @@ textarea {
   padding: 10px;
   margin-bottom: 20px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #C5A032;
   border-radius: 3px;
   resize: none;
+  background-color: #221f38;
 }
 
 textarea {
@@ -193,7 +194,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #D4AF37;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -204,5 +205,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: #C5A032;
 }
