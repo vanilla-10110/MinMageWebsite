@@ -1,72 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MinMage Games</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>MinMage Games</h1>
-        <nav>
-            <ul>
-                <li><a href="html/aboutUs.htm">About Us</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="html/contactUs.htm">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MinMage Games</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script>
+	</head>
+
+	<body>
+		<section class="topNav">
+			
+			<div class="title" href="#home">Min🎩Mage Games</div>
+			
+			<div class="burgerBox" ><div class="burger1"></div><div class="burger2"></div><div class="burger3"></div></div>
+		</section>
+		<hr>
+
+		<main>
+			<section>
+				<h1 class="titles">Who Are We?</h1>
             <p>MinMage Games is a game development company that focuses on creating fun and engaging games for players of all ages. We pride ourselves on our attention to detail and commitment to excellence.</p>
-        </section>
-        
-        <section id="games">
-            <h2>Our Games</h2>
-            <ul>
-                <li>
-                    <h3>Swords and Spells (INVEST NOW!)</h3>
-                    <p>Swords and Spells is a VR fantasy roguelite that we at MinMage Games created for our Software Design Major Project. </p>
-                    <a href="html/s&s.htm">Learn More</a>
-                </li>
-                <li>
-                    <h3>Jumpy Game</h3>
-                    <p>It's just a little game where you jump to avoid obstacles and have a fun little time :).</p>
-                    <a href="html/jumpyGame.htm">Learn More</a>
-                </li>
-                <li>
-                    <h3>Game 3</h3>
-                    <p>Description of Game 3.</p>
-                    <a href="#">Learn More</a>
-                </li>
-            </ul>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="php/process_form.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-              
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-              
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-              
-                <button type="submit">Submit</button>
-            </form>
-              
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2023 MinMage Games. All Rights Reserved.</p>
-    </footer>
-    
-    <script src="/js/script.js"></script>
-</body>
+
+			</section>
+			<br>
+			<section>
+				<h1 class="titles">Our Games</h1>
+				<br>
+				
+				
+				<div id="carousel">
+					<a href="html/swordsAndSpells.htm" class="item"><img src="images/swordsAndSpells.png" width="200px"></a>
+					<a href="html/jumpyGame.htm" class="item"><img src="images/JumpyImage.png" width="200px"></a>
+					<div class="item">
+						<!-- <div class="content"> -->
+							<!-- Your item content here -->
+						  <!-- </div> -->
+						  <!-- <div class="curtain-menu"> -->
+							<!-- Menu items -->
+							<!-- <ul> -->
+							  <!-- <li><a href="#">Menu Item 1</a></li> -->
+							  <!-- <li><a href="#">Menu Item 2</a></li> -->
+							  <!-- <li><a href="#">Menu Item 3</a></li> -->
+							<!-- </ul> -->
+						<!-- </div> -->
+					</div>
+					<div class="item">4</div>
+					<div class="item">5</div>
+				
+				</div>
+				
+				  
+				  
+			</section>
+			<section>
+				<h1 class="titles">Contact Us</h1>
+				<form method="post" action="/php/process_form.php">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+	
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+	
+					<label for="subject">Subject:</label>
+					<input type="text" id="subject" name="subject" required>
+	
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" required></textarea>
+	
+					<input type="submit" value="Submit">
+				</form>
+			</section>
+
+
+		</main>
+		
+
+		<nav role="navigation">
+		
+
+	</body>
 </html>
