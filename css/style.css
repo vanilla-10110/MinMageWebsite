@@ -3,8 +3,22 @@
   font-family: Roboto;
   src: url(../fonts/RobotoMono-Regular.ttf);
 }
+
+/*    New Colour Palette    
+
+--text: #f7f6f9;White
+--background: #0c0a0f;Darkest
+--primary: #2a0d52;Lighter  
+--secondary: #1c122b;Darker
+--accent: #ebd80a; YEHLLOW
+
+also remember to change titles and headings to Nunito whilst keeping the body text as Roboto Mono
+*/
+
+
+
 body {
-  background-color: #221f38;
+  background-color: #0c0a0f;
   margin:0;
   font-family: 'Roboto';
   color: #f2f2f2;
@@ -16,22 +30,22 @@ body {
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background-color: #474173;
+  background-color: #1c122b;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #D4AF37;
+  background-color: #ebd80a;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #C5A032;
+  background-color: #ebd80a;
 }
 
 .titles {
   text-align: center;
-  color: #D4AF37;
+  color: #ebd80a;
   font-size: 34px;
   font-weight: normal;
 }
@@ -41,8 +55,8 @@ hr {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #474173;
-  border-color: #474173;
+  background-color: #1c122b;
+  border-color: #1c122b;
 }
 
 main{
@@ -55,7 +69,7 @@ main{
 
 .topNav {
   overflow: hidden;
-  background-color: #221f38;
+  background-color: #0c0a0f;
   height: 125px;
 
 
@@ -90,12 +104,12 @@ main{
 
 
 
-  
+/*    BURDER    */
 .topNav div.burgerBox {
   position: absolute;
   top: 25px;
   right: 10px;
-  background-color: #221f38;
+  background-color: #0c0a0f;
   color: white;
   cursor: pointer;
 }
@@ -103,12 +117,13 @@ main{
 .burger1, .burger2, .burger3 {
   width: 50px;
   height: 7px;
-  background-color: #474173;
+  background-color: #2a0d52;
   margin: 14px 15px;
   border-radius: 10px;
   transition: 0.4s;
 }
 
+/*    Carousel witht the different games    */
 #carousel {
   display: flex;
   overflow-x: auto;
@@ -118,8 +133,9 @@ main{
   margin: 0 auto 0 auto;
   width: 900px;
   height: 320px;
-  
-  border: solid #221f38 .5px;
+
+  background-color: #2a0d52;
+  border-radius: 10px;
 }
 
 #carousel::-webkit-scrollbar {
@@ -151,7 +167,7 @@ main{
   font-size: 50px;
   text-align: center;
   line-height: 1.2;
-  background-color: #474173;
+  background-color: #1c122b;
   border-radius: 7px;
 }
 .content {
@@ -204,7 +220,7 @@ form {
   justify-content: center;
   margin-top: 50px;
   padding: 30px;
-  background-color: #474173;
+  background-color: #2a0d52;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
@@ -221,10 +237,10 @@ textarea {
   padding: 10px;
   margin-bottom: 20px;
   font-size: 16px;
-  border: 1px solid #C5A032;
+  border: 1px solid #ebd80a;
   border-radius: 3px;
   resize: none;
-  background-color: #221f38;
+  background-color: #1c122b;
 }
 
 textarea {
@@ -232,8 +248,8 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #D4AF37;
-  color: white;
+  background-color: #ebd80a;
+  color: #1c122b;
   border: none;
   padding: 10px 20px;
   margin-top: 20px;
@@ -243,7 +259,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #C5A032;
+  background-color: #BFB21D;
 }
 
 
